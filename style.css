@@ -118,6 +118,10 @@ nav a:hover {
 .skills h2 {
     font-size: 1.8em;
     margin-bottom: 20px;
+    color: #fff;
+}
+.skills p{
+    color: #fff;
 }
 .skill {
     display: inline-block;
