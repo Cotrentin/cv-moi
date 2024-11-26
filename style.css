@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Jaro:opsz@6..72&family=Oleo+Script:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background: url('./image/fond1.jpg') no-repeat center center/cover;
+    background-color: #b5edac;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+nav a {
+    text-decoration: none;
+    color: #bbfdff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #4caf50;
+}
+.coco {
+    text-align: center;
+    background: url('./image/fond.jpg') no-repeat center center/cover;
+    color: #68fa7e;
+    padding: 50px 0;
+    background-attachment: fixed;
+}
+.prof_pic {
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 15px;
+    border: 5px solid #dcf1cf;
+    transition: transform 0.5s ease;
+}
+.prof_pic:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+.coco h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-out;
+}
+.coco p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.socia_ico {
+    margin-top: 15px;
+}
+.socia_ico img {
+    width: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+.socia_ico img:hover {
+    transform: scale(1.2) rotate(15deg);
+}
+.educations {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    animation: slideInLeft 1s ease-out;
+}
+.educations h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.education-item {
+    background: #d0cccc;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(254, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+.education-item:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+.education-item span {
+    font-weight: bold;
+    color: #555;
+}
+.education-item h3 {
+    font-size: 1.4em;
+    margin: 10px 0;
+}
+.education-item p {
+    color: #666;
+    font-size: 1em;
+}
+.skills {
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url("image/back.jpg");
+    background-attachment: fixed;
+}
+.skills h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+.skill {
+    display: inline-block;
+    margin: 10px;
+    animation: bounceIn 1s ease-out;
+}
+.progress-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#1a821d calc(var(--percentage) * 1%), #e0e0e0 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+.progress-circle:hover {
+    transform: scale(1.1);
+}
+.experiences {
+    padding: 40px 20px;
+    background-color: #f2f2f2;
+    animation: slideInRight 1s ease-out;
+}
+.experiences h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+.experience-item {
+    background: #d0cccc;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+.experience-item:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+.experience-item span {
+    font-weight: bold;
+    color: #555;
+}
+.experience-item h3 {
+    font-size: 1.4em;
+    margin: 10px 0;
+}
+.experience-item p {
+    color: #666;
+    font-size: 1em;
+}
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #639964;
+    animation: fadeIn 1.5s ease-in-out;
+    background-image: url("image/back_2.jpg");
+    background-attachment: fixed;
+}
+.contact p{
+    color: #fff;
+}
+.contact button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.contact button:hover {
+    background-color: #366d2a;
+    transform: scale(1.1);
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.footer-icons img {
+    width: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+.footer-icons img:hover {
+    transform: scale(1.2);
+}
+@media (max-width: 768px) {
+    .education-item, .experience-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .progress-circle {
+        width: 80px;
+        height: 80px;
+    }
+}
+@media (max-width: 480px) {
+    .prof_pic {
+        width: 100px;
+    }
+    .progress-circle {
+        width: 60px;
+        height: 60px;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
